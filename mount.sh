@@ -1,9 +1,7 @@
 #!/bin/bash
 [ ! $EUID -eq 0 ] && echo "Not root." && exit 1
 
-CONTAINER="/home/gfv/.crypt/container"
-TARGET="/home/gfv/.crypt/target"
-CRYPTNAME="keycrypt"
+. config
 
 LOOPD=`losetup --find --show "$CONTAINER"`
 cryptsetup create "$CRYPTNAME" $LOOPD

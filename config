@@ -1,0 +1,3 @@
+CONTAINER="/home/gfv/privatefilms/container"
+TARGET="/home/gfv/.crypt"
+CRYPTNAME="keycrypt"
